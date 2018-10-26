@@ -28,6 +28,9 @@ class SubmitAnswer extends Component {
             className="form-control"
             placeholder="Share your answer."
             value={this.state.answer}
+            onChange={e => {
+              this.updateAnswer(e.target.value);
+            }}
           />
         </div>
         <button
