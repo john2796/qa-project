@@ -48,6 +48,10 @@ class Auth {
   }
 
   signIn() {
+    this.auth0.authorize();
+  }
+
+  signOut() {
     //clear id token, profle, and expiration
     this.idToken = null;
     this.profile = null;
@@ -75,5 +79,7 @@ As you can see , in this file, you are creatin a module tha defines theAuth clas
 6. Signin: This method initializes the authentifcation process. In other words , this metohd sends your users to the Auth0 login page.
 
 7.signOut: This method signs a user out by setting the profile, id_token, and expirsAt to null
+
+
 
 */
