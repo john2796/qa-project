@@ -54,5 +54,5 @@ Summary
 - This component works in a similar fashio to the NewQuestion componnet. The difference here is that intead of handling the POST request by itlsef , the compnent delegates it to someone else. Also , if the user is not authenticated , this compnent renderes nothing 
 
 To use this compnent, open the Quesiton.js file and replace its contens with thisL
-
+added note 
 */

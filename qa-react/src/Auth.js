@@ -31,10 +31,14 @@ class Auth {
       });
     });
   }
+  // client id
+  // 97076790782-sqintok51peet8vld6qjdnitjdnfck6m.apps.googleusercontent.com
 
+  // client secret
+  // Jf3oHGn69UUssGN6IF2-lLnG
   setSession(authResult, step) {
     this.idToken = authResult.idToken;
-    this.profile = authResult.idTokenPayload;
+    this.profile = authResult.idTokenPay1load;
     // set the time that the id token will expire at
     this.expiresAt = authResult.expiresIn * 1000 + new Date().getTime();
   }
@@ -42,9 +46,11 @@ class Auth {
   signOut() {
     this.auth0.logout({
       returnTo: "http://localhost:3000",
-      clientID: "<YOUR_AUTH0_CLIENT_ID>"
+      clientID:
+        "458900549011-et54olrg2qlp0p8ctjgu9c5fep8b9kan.apps.googleusercontent.com	"
     });
   }
+  //nkz2i-CmN-Jr1c8VSSNMK3Fn
 
   silentAuth() {
     return new Promise((resolve, reject) => {

@@ -73,7 +73,7 @@ export default Question;
 
 /* 
 Summary 
-Here, you can see that you are defining the submitAnswer method that will issue the requests to the backend API (with the user's ID Token) , and that you are defining a method called refreshQuestion . This method will refresh the contents of the question in two situations, on the first time React is rendering this compnent( compnentDidMount ) and righ after the backend API respnd to the POST requestof the submitAnswer method. 
+Here, you can see that you are defining the submitAnswer method that will issue the requests to the backend API (with the user's ID Token) , and that you are defining a method called refreshQuestion . This method will refresh the contents of the question in two situations, on the first time React is rendering this compnent( compnentDidMount ) and righ after the backend API respnd tao the POST requestof the submitAnswer method. 
 
 After refractoring the Question component , you will have a complete veresion of your app. To test it, you can go to http://localhost:3000/ and start using your full React app. After singing in , you will be able to ask questions , and you will be able to answer them as well. How cool is taht ?
 
